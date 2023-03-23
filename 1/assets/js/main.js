@@ -85,3 +85,9 @@ function filterForMetano(cars) {
     return cars.power == 'metano'
 }
 console.log(metano);
+
+const elettrica = cars.filter(filterForElettrica)
+function filterForElettrica(cars) {
+    return cars.power == 'elettrica'
+}
+console.log(elettrica);

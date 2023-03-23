@@ -86,3 +86,29 @@ console.log(diesel);
 console.log(gpl);
 console.log(metano);
 console.log(elettrica);
+
+/* 
+commenti aggiunti post correzione:
+cars.filter(car => {
+    if (car.power == 'benzina') {
+        return true
+    }
+})
+cars.filter(car => {
+    if (car.power == 'diesel') {
+        return true
+    }
+})
+cars.filter(car => {
+    if (car.power !== 'benzina' &&  car.power !== 'diesel') {
+        return true
+    }
+})
+
+versione corta:
+--> const benzina = cars.filter(car => car.power == 'benzina'); 
+per le altre
+--> const diesel = cars.filter(car => car.power == 'diesel'); 
+per le altre
+--> const altre = cars.filter(car => car.power !== 'benzina' && car.power !== 'diesel' ); 
+*/

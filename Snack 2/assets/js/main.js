@@ -16,3 +16,13 @@ users.forEach(user => {
     userFirstCap.push(unitedWord)
 })
 console.log(userFirstCap);
+
+/* Commento post correzione:
+const userFirstCap = users.map(user => {
+    const firstLetterCap = user.charAt(0).toLocaleUpperCase()
+    const otherLetters = user.slice(1).toLocaleLowerCase()
+    const unitedWord = firstLetterCap + otherLetters
+    return unitedWord
+})
+
+console.log(userFirstCap); */

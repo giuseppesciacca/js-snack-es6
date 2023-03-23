@@ -1,6 +1,5 @@
 /* Crea un array di oggetti che rappresentano degli animali.
-Ogni animale ha un nome, una famiglia e una classe.
-Crea un nuovo array con la lista dei mammiferi. */
+Ogni animale ha un nome, una famiglia e una classe. */
 
 const animals = [
     {
@@ -19,3 +18,7 @@ const animals = [
         classe: 'uccelli'
     },
 ]
+
+//Crea un nuovo array con la lista dei mammiferi.
+const mammiferi = animals.filter(animal => animal.classe == 'mammiferi');
+console.log(mammiferi);

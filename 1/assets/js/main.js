@@ -62,3 +62,26 @@ const cars = [
 
 /* Dividi le automobili in 3 array separati: nel primo array solo le auto a benzina, nel secondo solo le auto a diesel, nel terzo il resto delle auto. */
 
+const benzina = cars.filter(filterForGasoline)
+function filterForGasoline(cars) {
+    return cars.power == 'benzina'
+}
+console.log(benzina);
+
+const diesel = cars.filter(filterForDiesel)
+function filterForDiesel(cars) {
+    return cars.power == 'diesel'
+}
+console.log(diesel);
+
+const gpl = cars.filter(filterForGpl)
+function filterForGpl(cars) {
+    return cars.power == 'gpl'
+}
+console.log(gpl);
+
+const metano = cars.filter(filterForMetano)
+function filterForMetano(cars) {
+    return cars.power == 'metano'
+}
+console.log(metano);

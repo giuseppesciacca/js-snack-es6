@@ -1,3 +1,18 @@
-/* A partire da un array di stringhe, crea un secondo array formattando le stringhe del primo array in minuscolo e con l’iniziale maiuscola.
+/* A partire da un array di stringhe, crea un secondo array formattando le stringhe del primo array in minuscolo e con l’iniziale maiuscola. */
 
-Es: [‘pippo’, ‘PLUTO’, ‘Paperino’] =>[‘Pippo’, ‘Pluto’, ‘Paperino’] */
+const users = [
+    'pippo',
+    'PLUTO',
+    'Paperino',
+    'TOPOLINO'
+];
+
+const userFirstCap = [];
+users.forEach(user => {
+    const firstLetter = user.charAt(0)
+    const firstLetterCap = firstLetter.toUpperCase()
+    const otherLetters = user.slice(1).toLocaleLowerCase()
+    const unitedWord = firstLetterCap + otherLetters
+    userFirstCap.push(unitedWord)
+})
+console.log(userFirstCap);
